@@ -1,4 +1,4 @@
-angular.module('SafeApply', []).run(function($rootScope) {
+angular.module('Scope.safeApply', []).run(function($rootScope) {
 
   $rootScope.$safeApply = function($scope, fn, force) {
     $scope = $scope || $rootScope;
