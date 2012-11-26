@@ -22,7 +22,7 @@
 angular.module('Scope.safeApply', []).run(function($rootScope) {
 
   $rootScope.$safeApply = function($scope, fn, force) {
-    $scope = $scope || $rootScope;
+    $scope = $scope || angular.element(document).scope();
     fn = fn || function() {};
     if(force || !$scope.$$phase) {
       $scope.$apply(fn);
