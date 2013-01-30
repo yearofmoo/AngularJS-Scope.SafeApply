@@ -8,7 +8,20 @@
 
 To get this amazing plugin to run on your AngularJS application, simple download the plugin via NPM or Source File.
 
-Then include this in your AngularJS application.
+```bash
+# install via NPM
+npm install angularjs-scope.safeapply
+
+# And now you can copy or source the file via
+./node_modules/angularjs-scope.safeapply/src/Scope.SafeApply.js
+```
+
+Or you can just copy it directly form Github via:
+
+https://raw.github.com/yearofmoo/AngularJS-Scope.SafeApply/master/src/Scope.SafeApply.js
+
+
+Once sourced into your webpage, then include this in your AngularJS application as so:
 
 ```javascript
 angular.module('YOUR_MODULE', ['Scope.SafeApply']);
@@ -59,9 +72,12 @@ Then run this command at the root of the repo to test:
 The test output should look like so:
 
 ```bash
-Chrome 24.0: Executed 6 of 6 SUCCESS (0.179 secs / 0.041 secs)
+Chrome 24.0: Executed X of X SUCCESS (0.123 secs / 0.123 secs)
 ```
 
 ## Blog Article
 
 ...
+The challenges regarding $scope and $apply in AngularJS are talked about in more detail here:
+
+http://www.yearofmoo.com/2012/10/more-angularjs-magic-to-supercharge-your-webapp.html#apply-digest-and-phase
