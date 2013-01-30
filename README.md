@@ -56,6 +56,12 @@ Then run this command at the root of the repo to test:
 
 `./test/run.sh`
 
+The test output should look like so:
+
+```bash
+Chrome 24.0: Executed 6 of 6 SUCCESS (0.179 secs / 0.041 secs)
+```
+
 ## Blog Article
 
 ...
