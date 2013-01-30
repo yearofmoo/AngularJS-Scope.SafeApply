@@ -39,7 +39,7 @@ angular.module('Scope.safeApply', []).run(function($rootScope) {
         force = !!arguments[2];
       }
     }
-    $scope = $scope || angular.element(document).scope() || this;
+    $scope = $scope || this;
     fn = fn || function() { };
     if(force || !$scope.$$phase) {
       $scope.$apply ? $scope.$apply(fn) : $scope.apply(fn);
