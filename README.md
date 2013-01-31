@@ -76,7 +76,7 @@ Be sure to install testacular via NPM (NodeJS) with the following command:
 
 Then run this command at the root of the repo to test:
 
-```javascript
+```bash
 # this will spawn up testacular and run the test specs
 ./test/run.sh
 ```
