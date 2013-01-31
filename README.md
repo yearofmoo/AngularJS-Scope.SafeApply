@@ -1,5 +1,7 @@
 # AngularJS - Scope.SafeApply
 
+AngularJS $scope.$apply() without the hassle and errors :)
+
 ## About
 
 AngularJS' core feature is the use of scopes, variables and bindings. The procedure of a value being updated on the code
@@ -92,7 +94,6 @@ Chrome 24.0: Executed X of X SUCCESS (0.123 secs / 0.123 secs)
 
 ## Blog Article
 
-...
 The challenges regarding $scope and $apply in AngularJS are talked about in more detail here:
 
 http://www.yearofmoo.com/2012/10/more-angularjs-magic-to-supercharge-your-webapp.html#apply-digest-and-phase
