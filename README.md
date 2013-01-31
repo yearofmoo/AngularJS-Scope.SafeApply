@@ -72,7 +72,9 @@ $rootScope.$safeApply(fn);
 
 ## Testing
 
-Be sure to install testacular via NPM (NodeJS) with the following command:
+You can run the tests for this plugin directly from the repository...
+
+To get started, be sure to have testacular installed. Testacular can be installed via NPM (NodeJS) with the following command:
 
 ```bash
 # this will install testacular as a global binary on your system
