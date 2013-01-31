@@ -1,6 +1,6 @@
 # AngularJS - Scope.SafeApply
 
-AngularJS $scope.$apply() without the hassle and errors :)
+AngularJS **$scope.$apply()** **without** the **hassle** and **errors** :)
 
 ## About
 
