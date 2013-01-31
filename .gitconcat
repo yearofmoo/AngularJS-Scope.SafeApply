@@ -1,7 +1,7 @@
 jsmin:
   filters:
-    - cat Source/Scope.SafeApply.js | jsmin > %{output}
+    - cat src/Scope.SafeApply.js | jsmin > %{output}
   input:
-    - Source/Scope.SafeApply.js
+    - src/Scope.SafeApply.js
   output:
-    - Source/Scope.SafeApply.min.js
+    - src/Scope.SafeApply.min.js
