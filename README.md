@@ -72,7 +72,10 @@ $rootScope.$safeApply(fn);
 
 Be sure to install testacular via NPM (NodeJS) with the following command:
 
-`sudo npm install -g testacular`
+```bash
+# this will install testacular as a global binary on your system
+sudo npm install -g testacular
+```
 
 Then run this command at the root of the repo to test:
 
