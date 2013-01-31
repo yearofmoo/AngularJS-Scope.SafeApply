@@ -96,4 +96,22 @@ describe("Testing AngularJS Safe Apply", function() {
     expect(element.html()).equal(value);
   }));
 
+  it("should change the location route on $rootScope", inject(function($rootScope, $location) {
+    var path = '/home';
+    expect($location.path()).not.to.equal(path);
+    $location.path(path);
+    $rootScope.$safeApply();
+    expect($location.path()).to.equal(path);
+  }));
+
+  it("should change the location route on $scope", inject(function($rootScope, $location) {
+    var $scope = $rootScope.$new();
+    var path = '/index';
+    expect($location.path()).not.to.equal(path);
+    $location.path(path);
+    $scope.$safeApply();
+    expect($location.path()).to.equal(path);
+    $scope.$destroy();
+  }));
+
 });
