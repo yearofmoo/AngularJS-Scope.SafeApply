@@ -35,7 +35,7 @@ https://raw.github.com/yearofmoo/AngularJS-Scope.SafeApply/master/src/Scope.Safe
 Once sourced into your webpage, then include this in your AngularJS application as so:
 
 ```javascript
-angular.module('YOUR_MODULE', ['Scope.SafeApply']);
+angular.module('YOUR_MODULE', ['Scope.safeApply']);
 ```
 
 As soon as the application is bootstrapped or set to a ng-app directive then the plugin can be used inside your scope variables.
