@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-angular.module('Scope.safeApply', []).run(function($rootScope) {
+angular.module('Scope.safeApply', []).run(['$rootScope', function($rootScope) {
 
   $rootScope.$safeApply = function() {
     var $scope, fn, force = false;
@@ -49,4 +49,4 @@ angular.module('Scope.safeApply', []).run(function($rootScope) {
     }
   };
 
-});
+}]);
