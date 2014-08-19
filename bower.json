@@ -1,0 +1,18 @@
+{
+  "name": "AngularJS-Scope.SafeApply",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yearofmoo/AngularJS-Scope.SafeApply",
+  "authors": [
+    "Matsko"
+  ],
+  "description": "A Scope Wrapper for AngularJS",
+  "main": "src/Scope.SafeApply.min.js",
+  "keywords": [
+    "Angularjs",
+    "Scope",
+    "Digest",
+    "SafeApply",
+    "rootScope"
+  ],
+  "license": "MIT"
+}
