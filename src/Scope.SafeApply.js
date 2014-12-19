@@ -19,34 +19,35 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-angular.module('Scope.safeApply', []).run(function($rootScope) {
-
-  $rootScope.$safeApply = function() {
-    var $scope, fn, force = false;
-    if(arguments.length == 1) {
-      var arg = arguments[0];
-      if(typeof arg == 'function') {
-        fn = arg;
+angular.module('Scope.safeApply', []).run([
+  '$rootScope',
+  function($rootScope) {
+    $rootScope.$safeApply = function() {
+      var $scope, fn, force = false;
+      if(arguments.length == 1) {
+        var arg = arguments[0];
+        if(typeof arg == 'function') {
+          fn = arg;
+        }
+        else {
+          $scope = arg;
+        }
       }
       else {
-        $scope = arg;
+        $scope = arguments[0];
+        fn = arguments[1];
+        if(arguments.length == 3) {
+          force = !!arguments[2];
+        }
       }
-    }
-    else {
-      $scope = arguments[0];
-      fn = arguments[1];
-      if(arguments.length == 3) {
-        force = !!arguments[2];
+      $scope = $scope || this;
+      fn = fn || function() { };
+      if(force || !$scope.$$phase) {
+        $scope.$apply ? $scope.$apply(fn) : $scope.apply(fn);
       }
-    }
-    $scope = $scope || this;
-    fn = fn || function() { };
-    if(force || !$scope.$$phase) {
-      $scope.$apply ? $scope.$apply(fn) : $scope.apply(fn);
-    }
-    else {
-      fn();
-    }
-  };
-
-});
+      else {
+        fn();
+      }
+    };
+  }
+]);
