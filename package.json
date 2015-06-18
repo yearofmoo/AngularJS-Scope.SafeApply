@@ -5,6 +5,7 @@
   "bugs": {
     "url": "https://github.com/yearofmoo/AngularJS-Scope.SafeApply/issues"
   },
+  "main": "src/Scope.SafeApply.js",
   "keywords": [
     "AngularJS",
     "apply",
