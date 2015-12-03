@@ -1,0 +1,18 @@
+{
+  "name": "safeApply",
+  "main": "src/Scope.safeApply.js",
+  "ignore": [
+    ".*",
+    "*.custom.*",
+    "*.log",
+    "*.map",
+    "*.md",
+    "component.json",
+    "package.json",
+    "doc",
+    "node_modules",
+    "perf",
+    "test",
+    "vendor"
+  ]
+}
