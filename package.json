@@ -18,5 +18,6 @@
     "type": "git",
     "url": "git://github.com/yearofmoo/AngularJS-Scope.SafeApply.git"
   },
+  "typings": "./index.d.ts",
   "version": "0.0.1"
 }
